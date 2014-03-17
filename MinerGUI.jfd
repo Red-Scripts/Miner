@@ -1,0 +1,37 @@
+JFDML JFormDesigner: "5.1.1.0.120" Java: "1.7.0_51" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:27:p, par l {comp label2:::::x, seq {par l {seq {space :10:10:p, comp label3:::p:136:p}, comp label1:::p:176:p, comp ids::l:p:159:p}, space :0:76:x}}, space :::p}, seq l {space :p:28:p, comp start:::p:162:p, space :0:0:x}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp label1:::p::p, space :::p, comp label2:::p::p, space :::p, comp label3:::p::p, space :::p, comp ids:::p::p, space :p:31:p, comp start:::p::p, space ::14:x}}"
+		} ) {
+			name: "this"
+			"title": "Red's Miner"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Please Enter The Ids Of The Rocks"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Please separate IDs with a comma"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Example: 7171,7172,7173"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "ids"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "start"
+				"text": "Start"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "startActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 305, 195 )
+		} )
+	}
+}
